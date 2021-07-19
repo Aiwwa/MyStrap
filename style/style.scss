@@ -1,0 +1,152 @@
+@import 'classes_style';
+
+// ------Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+// -----Style
+
+// Head menu
+.menu {
+  .logo {
+    .logo-name {
+      font-size: 18px;
+      font-weight: 6;
+    }
+  }
+}
+//Main lib
+.lib-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  //-Aside
+  //Side menu
+  .side-menu {
+    .side-menu-wrapp {
+      position: sticky;
+      top: 10px;
+
+      ul li {
+        margin: 20px;
+
+        a {
+          color: #252525;
+        }
+
+        a:hover {
+          border-bottom: 1px solid rgb(27, 25, 23);
+        }
+      }
+    }
+  }
+
+  //-Lib
+  .lib {
+    .lib-wrapp {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+// Button
+.btn-up {
+  position: relative;
+  right: 10px;
+  height: 60px;
+  border-radius: 50%;
+  width: 60px;
+  background: rgb(166, 209, 24);
+  position: fixed;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px black solid;
+
+  a {
+    color: #e0e0e9;
+  }
+}
+
+// -----Media
+
+@media (max-width: 1140px) {
+  body {
+    //Main lib
+    .lib-wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+      //-Aside
+      //Side menu
+      .side-menu {
+        position: sticky;
+        top: -10px;
+
+        ul {
+          display: flex;
+          justify-content: center;
+          padding: 5px;
+          font-size: 14px;
+          li {
+            margin: 20px;
+
+            a {
+              color: #252525;
+            }
+
+            a:hover {
+              border-bottom: 1px solid rgb(27, 25, 23);
+            }
+          }
+        }
+      }
+
+      //-Lib
+      .lib {
+        .lib-wrapp {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 940px) {
+}
+
+@media (max-width: 890px) {
+  .d-none-md {
+    display: none;
+  }
+
+  .d-block {
+    display: block;
+  }
+}
+
+@media (max-width: 520px) {
+  .d-none-min {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .d-none-smin {
+    display: none;
+  }
+}
