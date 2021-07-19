@@ -1,7 +1,7 @@
 # MyStrap
 
 
-https://user-images.githubusercontent.com/71601381/126173730-f3c829fe-fcb1-4c3b-9554-103ef14d8faa.mov
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/71601381/126174216-ed16ae6d-d206-4807-8ec5-bd346a1908d9.gif)
 
 
 
